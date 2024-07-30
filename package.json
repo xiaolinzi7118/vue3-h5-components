@@ -10,10 +10,10 @@
     "build:components": "vite build --mode components"
   },
   "dependencies": {
-    "vant": "^3.6.12",
-    "vue": "^3.2.41"
+    "vant": "^3.6.12"
   },
   "devDependencies": {
+    "vue": "3.2.41",
     "@vitejs/plugin-vue": "^3.2.0",
     "less": "^4.2.0",
     "postcss-px-to-viewport": "^1.1.1",

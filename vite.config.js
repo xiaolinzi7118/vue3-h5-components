@@ -32,9 +32,9 @@ export default defineConfig((command) => {
     // 打包组件
     config.build = {
       //打包后文件目录
-      outDir: "es",
+      // outDir: "es",
       //压缩
-      minify: false,
+      minify: true,
       rollupOptions: {
         //忽略打包vue文件
         external: ["vue"],
@@ -50,7 +50,7 @@ export default defineConfig((command) => {
         entry: "./index.js",
         name: "myComponent",
         fileName: "myComponent",
-        formats: ["es", "umd", "cjs"],
+        formats: ["umd"],
       },
     }
   }
