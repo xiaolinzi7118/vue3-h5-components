@@ -5,6 +5,7 @@
 <template>
   <div>测试demo</div>
   <my-button type="danger">按钮</my-button>
+  <my-empty description="暂无数据"></my-empty>
 </template>
 
 <style>

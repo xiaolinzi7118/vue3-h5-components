@@ -20,6 +20,7 @@ export default defineConfig({
       // the proper extensions will be added
       fileName: (format) => `my-lib.${format}.js`
     },
+    minify: false,
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue'],
@@ -37,6 +38,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  },
+  define: {
+    'process.env' : {
+      NODE_ENV: process.env.NODE_ENV // 将属性转化为全局变量，让代码中可以正常访问
     }
   }
 })

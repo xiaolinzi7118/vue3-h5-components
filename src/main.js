@@ -14,5 +14,5 @@ const app = createApp(App)
 window.Vue = Vue
 console.log('window.scriptDom: ', window.scriptDom);
 window.scriptDom.onload = () => {
-  app.use(MyLib.ButtonPlugin).mount('#app')
+  app.use(MyLib.ButtonPlugin).use(MyLib.EmptyPlugin).mount('#app')
 }
